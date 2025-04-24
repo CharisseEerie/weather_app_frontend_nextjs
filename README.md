@@ -1,0 +1,1 @@
+Weather Frontend using Next.js + TypeScript + TailwindCSS + RippleUI
