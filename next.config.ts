@@ -1,14 +1,13 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    async rewrites() {
+  async rewrites() {
       return [
-        {
-          source: '/api/weather',
-          destination: 'http://0.0.0.0:8000/api/weather',   // internal address
-        },
-      ];
-    },
-  };
-  
-  export default nextConfig;
-  
+            {
+                    source: '/api/:path*',
+                            destination: 'https://super-duper-parakeet-g46wgx4pp9v9hwj7-8000.app.github.dev/api/:path*',
+                                  },
+                                      ];
+                                        },
+                                        };
+                                        
+                                        module.exports = nextConfig;
